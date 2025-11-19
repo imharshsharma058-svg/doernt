@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/dorent.fevicon.jpg" type="image/x-icon">
+  <title>Dorent</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container-fluid px-4">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dorent_logo-removebg.png" alt="Dorent Logo" class="navbar-logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <!-- SERVICES DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Services</h6>
+                  <a class="dropdown-item" href="Power Distribution Systems.html">Power Distribution Systems</a>
+                  <a class="dropdown-item" href="Electrical Design & Consultancy.html">Electrical Design &
+                    Consultancy</a>
+                  <a class="dropdown-item" href="Industrial & Commercial Electrification.html">Industrial & Commercial
+                    Electrification</a>
+                  <a class="dropdown-item" href="Earthing & Lightning Protection Systems.html">Earthing & Lightning
+                    Protection Systems</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Infrastructure</h6>
+                  <a class="dropdown-item" href="Structured Cabling & Networking.html">Structured Cabling &
+                    Networking</a>
+                  <a class="dropdown-item" href="Data Center Setup & Maintenance.html">Data Center Setup &
+                    Maintenance</a>
+                  <a class="dropdown-item" href="IT Infrastructure Design & Integration.html">IT Infrastructure Design &
+                    Integration</a>
+                  <a class="dropdown-item" href="IT Helpdesk & Managed Services.html">IT Helpdesk & Managed Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Maintenance</h6>
+                  <a class="dropdown-item" href="#">24/7 Monitoring</a>
+                  <a class="dropdown-item" href="#">Energy Auditing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SOLUTIONS DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="solutionsDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Solutions</h6>
+                  <a class="dropdown-item" href="Energy Management & Auditing.html">Energy Management & Auditing</a>
+                  <a class="dropdown-item" href="Solar Power Solutions & Renewable Integration.html">Solar Power
+                    Solutions & Renewable</a>
+                  <a class="dropdown-item" href="Street Lighting & Outdoor Electrification.html">Street Lighting &
+                    Outdoor Electrification</a>
+                  <a class="dropdown-item" href="Operation & Maintenance (O&M) Services.html">Operation & Maintenance
+                    (O&M) Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Solutions</h6>
+                  <a class="dropdown-item" href="Cloud & Virtualization Solutions.html">Cloud & Virtualization
+                    Solutions</a>
+                  <a class="dropdown-item" href="Cybersecurity & Firewall Solutions.html">Cybersecurity & Firewall
+                    Solutions</a>
+                  <a class="dropdown-item" href="Software Development & ERP Solutions.html">Software Development & ERP
+                    Solutions</a>
+                  <a class="dropdown-item" href="Surveillance & Access Control Systems.html">Surveillance & Access
+                    Control Systems </a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Integrated Solutions</h6>
+                  <a class="dropdown-item" href="Smart Building Solutions.html">Smart Building Solutions</a>
+                  <a class="dropdown-item" href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a>
+                  <a class="dropdown-item" href="Telecom & Unified Communication Systems.html">Telecom & Unified
+                    Systems</a>
+                  <a class="dropdown-item" href="End-to-End Project Management.html">End-to-End Project management</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+  <!-- carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/data Center.jpg" class="d-block w-100" style="height:600px;" alt="It services">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Empowering Businesses with Smart Technology</h2>
+          <p>Innovating reliable electrical, IT, and communication solutions for the digital future.</p>
+
+          <button class="btn btn-danger">Innovation</button>
+          <button class="btn btn-primary">Connectivity</button>
+          <button class="btn btn-success">Transformation</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/networking.1.jpg" class="d-block w-100" style="height:600px;" alt="networking">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Building the Future of Connectivity</h2>
+          <p>From power systems to cloud networks — Dorent delivers technology that connects the world.</p>
+
+          <button class="btn btn-danger">Electrical</button>
+          <button class="btn btn-primary">IT Infrastructure</button>
+          <button class="btn btn-success">Security Systems</button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/virtualization.jpg" class="d-block w-100" style="height:600px;" alt="virtualization">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Your Partner in Technology, Growth & Innovation</h2>
+          <p>We design, connect, and secure intelligent infrastructures for businesses that never stop evolving.</p>
+
+          <button class="btn btn-danger">Empower</button>
+          <button class="btn btn-primary">Connect</button>
+          <button class="btn btn-success">Secure</button>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- End carousel -->
+  <div class="container my-5">
+
+    <!-- 1️⃣ Electrical Services -->
+    <div class="row featurette d-flex align-items-center mb-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-bold text-primary">Electrical Services</h2>
+        <p class="lead mt-3">
+          Power Distribution Systems (HT/LT panels, transformers, switchgears)<br>
+          Electrical Design & Consultancy<br>
+          Industrial & Commercial Electrification<br>
+          Earthing & Lightning Protection Systems<br>
+          Energy Management & Auditing<br>
+          Solar Power Solutions & Renewable Integration<br>
+          Street Lighting & Outdoor Electrification<br>
+          Operation & Maintenance (O&M) Services
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/networking.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded shadow"
+          alt="Electrical Services" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- 2️⃣ IT Services -->
+    <div class="row featurette d-flex align-items-center flex-row-reverse mb-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-bold text-success"> IT Services</h2>
+        <p class="lead mt-3">
+          Structured Cabling & Networking (LAN, WAN, Fiber Optics)<br>
+          Data Center Setup & Maintenance<br>
+          IT Infrastructure Design & Integration<br>
+          Cloud & Virtualization Solutions<br>
+          Cybersecurity & Firewall Solutions<br>
+          Software Development & ERP Solutions<br>
+          IT Helpdesk & Managed Services<br>
+          Surveillance & Access Control Systems (CCTV, Biometric, IoT)
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/Eleetrical services.png"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded shadow"
+          alt="IT Services" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- 3️⃣ Integrated Solutions -->
+    <div class="row featurette d-flex align-items-center mb-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-bold text-info"> Integrated Solutions</h2>
+        <p class="lead mt-3">
+          Smart Building Solutions (BMS, automation, IoT)<br>
+          ICT Infrastructure Projects<br>
+          Telecom & Unified Communication Systems<br>
+          End-to-End Project Management (Design → Execution → AMC)
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/networking.2.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded shadow"
+          alt="Integrated Solutions" width="500" height="500">
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- End Blog Heading -->
+
+  <!-- small Square Blog  -->
+  <!-- Dorent Insights Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4 fw-bold text-primary">Latest Insights from Dorent</h2>
+    <div class="row mb-2">
+
+      <!-- Card 1: Data Center Setup -->
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative hover-card">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Infrastructure</strong>
+            <h3 class="mb-0">Data Center Setup & Optimization</h3>
+            <p class="card-text mb-auto">
+              Dorent delivers state-of-the-art data center design and maintenance services with advanced cooling
+              systems,
+              high-speed connectivity, and top-tier security to ensure uninterrupted business operations.
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/data center.1 blog.png" width="200" height="250" alt="Data Center"
+              class="bd-placeholder-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: IT & Networking -->
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative hover-card">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success-emphasis">Networking</strong>
+            <h3 class="mb-0">Structured Cabling & Fiber Optics</h3>
+            <p class="card-text mb-auto">
+              We specialize in end-to-end structured cabling for LAN, WAN, and fiber optics,
+              ensuring seamless connectivity for enterprises and smart infrastructure networks.
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/Structured Cabling & Fiber Optics.1 blog.jpg" width="200" height="250" alt="Networking"
+              class="bd-placeholder-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Smart Solutions -->
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative hover-card">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Innovation</strong>
+            <h3 class="mb-0">Smart Building & IoT Automation</h3>
+            <p class="card-text mb-auto">
+              Dorent integrates smart IoT-based building management systems (BMS) that enhance energy efficiency,
+              security, and comfort through intelligent automation and real-time control.
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/Smart Building & IoT Automation.1blog.jpg" width="200" height="250" alt="Smart Building"
+              class="bd-placeholder-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Cybersecurity -->
+      <div class="col-md-6">
+        <div
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative hover-card">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger-emphasis">Security</strong>
+            <h3 class="mb-0">Cybersecurity & Firewall Solutions</h3>
+            <p class="card-text mb-auto">
+              Our cybersecurity experts implement advanced firewall, intrusion detection, and endpoint protection
+              systems
+              to safeguard your digital assets and business continuity.
+            </p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="images/Cybersecurity & Firewall Solutions.1 blog.jpg" width="200" height="250" alt="Cybersecurity"
+              class="bd-placeholder-img" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Features Section -->
+  <section class="why-choose">
+    <h2>Why Choose <span>Dorent?</span></h2>
+    <div class="choose-grid">
+
+      <div class="choose-card">
+        <h3> Electrical Excellence</h3>
+        <p>End-to-end electrical solutions ensuring safety, reliability, and energy efficiency — from power distribution
+          to renewable integration.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Smart IT Infrastructure</h3>
+        <p>Robust IT networks, data centers, and cybersecurity systems to keep your business connected, secure, and
+          future-ready.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> 24×7 Customer Support</h3>
+        <p>Round-the-clock NOC and technical support to ensure your systems stay operational with minimal downtime.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Innovation That Empowers</h3>
+        <p>We embrace the latest technologies to provide smart, scalable, and sustainable solutions for your business.
+        </p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Cybersecurity First</h3>
+        <p>Advanced protection mechanisms, firewalls, and real-time monitoring to secure your infrastructure from modern
+          threats.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Sustainable Growth</h3>
+        <p>We focus on eco-friendly, energy-efficient practices to create technology solutions that are both smart and
+          sustainable.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Partners Section -->
+  <section class="partners-carousel-section">
+    <div class="container">
+      <h2 class="section-heading">Our Trusted Partners</h2>
+
+      <div class="partners-wrap">
+        <div class="partners-track">
+          <!-- unique logos -->
+          <div class="partner-item"><img src="images/Reliance-Jio-Logo.jpg" alt="Reliance Jio"></div>
+          <div class="partner-item"><img src="images/Rediff-logo.png" alt="Rediff"></div>
+          <div class="partner-item"><img src="images/Spectra.png" alt="Spectra"></div>
+          <div class="partner-item"><img src="images/tata Teleocm.png" alt="Tata Telecom"></div>
+          <div class="partner-item"><img src="images/ishan technologies.png" alt="Ishan Technologies"></div>
+          <div class="partner-item"><img src="images/Microsoft.png" alt="Microsoft"></div>
+
+          <!-- duplicate logos for seamless loop (KEEP the same order as above) -->
+          <div class="partner-item"><img src="images/Reliance-Jio-Logo.jpg" alt="Reliance Jio"></div>
+          <div class="partner-item"><img src="images/Rediff-logo.png" alt="Rediff"></div>
+          <div class="partner-item"><img src="images/Spectra.png" alt="Spectra"></div>
+          <div class="partner-item"><img src="images/tata Teleocm.png" alt="Tata Telecom"></div>
+          <div class="partner-item"><img src="images/ishan technologies.png" alt="Ishan Technologies"></div>
+          <div class="partner-item"><img src="images/Microsoft.png" alt="Microsoft"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- other services carousel -->
+  <section class="solutions-carousel-section">
+    <h2 class="section-title">Our Solutions</h2>
+    <div class="solutions-carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+
+      <div class="carousel-track">
+        <!-- 1 -->
+        <div class="solution-card">
+          <img src="Hero images/Power Distribution Systems.hero.jpg" alt="power Distribution">
+          <h3>Power Distribution Systems</h3>
+          <p>Reliable and efficient HT/LT panels, transformers, and switchgears designed to ensure smooth power
+            distribution and enhanced safety in industrial environments.</p>
+          <a href="Power Distribution Systems.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="solution-card">
+          <img src="Hero images/electrical.hero.jpg" alt="Electrical Design & Consultancy">
+          <h3>Electrical Design & Consultancy</h3>
+          <p>Professional design and consultancy services for electrical systems, ensuring optimized layouts, safety
+            compliance, and energy-efficient solutions for every project.</p>
+          <a href="Electrical Design & Consultancy.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 3 -->
+        <div class="solution-card">
+          <img src="Hero images/commercial electrification.hero.jpg" alt="Industrial & Commercial Electrification">
+          <h3>Industrial & Commercial Electrification</h3>
+          <p>End-to-end electrification services for factories, plants, and commercial spaces with focus on load
+            management, safety, and sustainable energy efficiency.</p>
+          <a href="Industrial & Commercial Electrification.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 4 -->
+        <div class="solution-card">
+          <img src="Hero images/Earthing.hero.jpg" alt="Earthing & Lightning Protection Systems">
+          <h3>Earthing & Lightning Protection Systems</h3>
+          <p>Advanced earthing and lightning protection systems ensuring safety from electrical surges, faults, and
+            lightning strikes for sensitive infrastructures.</p>
+          <a href="Earthing & Lightning Protection Systems.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 5 -->
+        <div class="solution-card">
+          <img src="Hero images/energy management auditing .hero.jpg" alt="Energy Management & Auditing">
+          <h3>Energy Management & Auditing</h3>
+          <p>Comprehensive energy audits and smart metering solutions to reduce energy waste, enhance efficiency, and
+            lower operational costs across facilities.</p>
+          <a href="Energy Management & Auditing.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 6 -->
+        <div class="solution-card">
+          <img src="Hero images/solar .hero.jpg" alt="Solar Power Solutions & Renewable Integration">
+          <h3>Solar Power Solutions & Renewable Integration</h3>
+          <p>Harness the power of the sun through custom-designed solar PV systems that provide clean, reliable, and
+            cost-effective renewable energy for businesses.</p>
+          <a href="Solar Power Solutions & Renewable Integration.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 7 -->
+        <div class="solution-card">
+          <img src="Hero images/street light.hero.jpg" alt="Street Lighting & Outdoor Electrification">
+          <h3>Street Lighting & Outdoor Electrification</h3>
+          <p>Smart, energy-efficient lighting systems for streets, campuses, and industries, designed for longevity and
+            sustainability with remote control options.</p>
+          <a href="Street Lighting & Outdoor Electrification.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 8 -->
+        <div class="solution-card">
+          <img src="Hero images/operation .services.hero.png" alt="Operation & Maintenance (O&M) Services">
+          <h3>Operation & Maintenance (O&M) Services</h3>
+          <p>24×7 professional O&M services ensuring reliability, system uptime, and optimal performance for electrical
+            and IT infrastructure assets.</p>
+          <a href="Operation & Maintenance (O&M) Services.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 9 -->
+        <div class="solution-card">
+          <img src="Hero images/Structured Cabling.hero.webp" alt="Structured Cabling & Networking">
+          <h3>Structured Cabling & Networking</h3>
+          <p>High-performance LAN/WAN/Fiber Optic cabling infrastructure delivering seamless data transmission,
+            reliability, and scalability for enterprises.</p>
+          <a href="Structured Cabling & Networking.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 10 -->
+        <div class="solution-card">
+          <img src="Hero images/data center.hero.jpg" alt="Data Center Setup & Maintenance">
+          <h3>Data Center Setup & Maintenance</h3>
+          <p>Designing, building, and maintaining efficient data centers that provide secure, redundant, and
+            high-availability environments for IT operations.</p>
+          <a href="Data Center Setup & Maintenance.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 11 -->
+        <div class="solution-card">
+          <img src="Hero images/IT-infrastructure.hero.jpg" alt="IT Infrastructure Design & Integration">
+          <h3>IT Infrastructure Design & Integration</h3>
+          <p>Comprehensive IT infrastructure planning and integration ensuring scalable, secure, and cost-effective
+            solutions for businesses of all sizes.</p>
+          <a href="IT Infrastructure Design & Integration.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 12 -->
+        <div class="solution-card">
+          <img src="Hero images/cloud virtualization.hero.jpg" alt="Cloud & Virtualization Solutions">
+          <h3>Cloud & Virtualization Solutions</h3>
+          <p>Empower your enterprise with cloud-based services and virtual environments that enhance flexibility, reduce
+            costs, and improve collaboration.</p>
+          <a href="Cloud & Virtualization Solutions.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 13 -->
+        <div class="solution-card">
+          <img src="Hero images/cybersecurity.hero.jpeg" alt="Cybersecurity & Firewall Solutions">
+          <h3>Cybersecurity & Firewall Solutions</h3>
+          <p>Advanced protection through network firewalls, intrusion prevention, and security monitoring to defend your
+            business from digital threats.</p>
+          <a href="Cybersecurity & Firewall Solutions.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 14 -->
+        <div class="solution-card">
+          <img src="Hero images/ERP-Software-Development.hero.jpg" alt="Software Development & ERP Solutions">
+          <h3>Software Development & ERP Solutions</h3>
+          <p>Custom-built ERP and software solutions tailored to streamline business operations and improve efficiency
+            across organizational workflows.</p>
+          <a href="Software Development & ERP Solutions.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 15 -->
+        <div class="solution-card">
+          <img src="Hero images/it helpdesk.hero.jpeg" alt="IT Helpdesk & Managed Services">
+          <h3>IT Helpdesk & Managed Services</h3>
+          <p>Proactive 24×7 IT support and managed services ensuring continuous uptime, faster issue resolution, and
+            improved user satisfaction.</p>
+          <a href="IT Helpdesk & Managed Services.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 16 -->
+        <div class="solution-card">
+          <img src="Hero images/survillance.hero.jpg" alt="Surveillance & Access Control Systems">
+          <h3>Surveillance & Access Control Systems</h3>
+          <p>Integrated CCTV, biometric, and IoT-based access control solutions enhancing physical security, analytics,
+            and real-time monitoring capabilities.</p>
+          <a href="Surveillance & Access Control Systems.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 17 -->
+        <div class="solution-card">
+          <img src="Hero images/smart building solution.jpg" alt="Smart Building Solutions (BMS, IoT)">
+          <h3>Smart Building Solutions (BMS, IoT)</h3>
+          <p>Automation solutions for HVAC, lighting, and energy systems powered by IoT, enabling smarter, sustainable,
+            and energy-efficient buildings.</p>
+          <a href="Smart Building Solutions.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 18 -->
+        <div class="solution-card">
+          <img src="Hero images/ICT.hero.webp" alt="ICT Infrastructure Projects">
+          <h3>ICT Infrastructure Projects</h3>
+          <p>Turnkey ICT project delivery — from design to deployment — ensuring robust communication networks and
+            reliable data connectivity.</p>
+          <a href="ICT Infrastructure Projects.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 19 -->
+        <div class="solution-card">
+          <img src="Hero images/telecom.hero.jpg" alt="Telecom & Unified Communication Systems">
+          <h3>Telecom & Unified Communication Systems</h3>
+          <p>Comprehensive telecom and unified communication systems integrating voice, video, and data across multiple
+            platforms for collaboration.</p>
+          <a href="Telecom & Unified Communication Systems.html" class="explore-btn">Explore</a>
+        </div>
+
+        <!-- 20 -->
+        <div class="solution-card">
+          <img src="Hero images/End to End .hero.png" alt="End-to-End Project Management">
+          <h3>End-to-End Project Management</h3>
+          <p>Dedicated PM teams overseeing design, execution, and AMC — ensuring timely delivery, quality assurance, and
+            long-term client satisfaction.</p>
+          <a href="End-to-End Project Management.html" class="explore-btn">Explore</a>
+        </div>
+      </div>
+
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+
+
+
+  <!-- Contact Us Section -->
+  <section class="contact-section">
+
+    <div class="contact-overlay"></div>
+
+    <div class="contact-content">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <input type="hidden" name="access_key" value="d8b60da3-fb73-419f-b948-6b45595e87e8">
+            <input type="text" name="name" placeholder=" your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
+            <input type="telephone" name="number" placeholder="Contact Number" class="contact-inputs" required>
+          </div>
+          <textarea name="Message" placeholder="your  Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects Snapshots</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Integrated Solutions</h4>
+        <ul>
+          <li><a href="Smart Building Solutions.html">Smart Building Solutions (BMS, automation, IoT)</a></li>
+          <li><a href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a></li>
+          <li><a href="Telecom & Unified Communication Systems.html">Telecom & Unified Communication Systems</a></li>
+          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4> Services</h4>
+        <ul>
+          <li><a href="Power Distribution Systems.html">Power Distribution Systems</a></li>
+          <li><a href="Electrical Design & Consultancy.html">Electrical Design & Consultancy</a></li>
+          <li><a href="Industrial & Commercial Electrification.html">Industrial & Commercial Electrification</a></li>
+          <li><a href="Data Center Setup & Maintenance.html">Data Center Setup & Maintenance</a></li>
+          <li><a href="IT Infrastructure Design & Integration.html">IT Infrastructure Design & Integration</a></li>
+          <li><a href="Cloud & Virtualization Solutions.html">Cloud & Virtualization Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-column">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@dorent.in</p>
+        <p><i class="fa-solid fa-phone"></i> +91-95993 37740, 91131 49584</p>
+        <p><i class="fa-solid fa-phone"></i> Dorent Services India Private Limited A 197 SECTOR 63 NOIDA
+          GAUTAM BUDDHA NAGAR UP 201301</p>
+
+        <a href="https://maps.app.goo.gl/B1w7H2BCk6m7JGYZA?g_st=aw" class="btn-direction"><i
+            class="fa-solid fa-location-arrow"></i> Get Direction</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 Dorent Services India Private Limited. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+  </footer>
+
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let index = 0;
+
+    function moveCarousel() {
+      const cards = document.querySelectorAll('.solution-card');
+      const cardWidth = cards[0].offsetWidth + 20; // 20px gap
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      const cards = document.querySelectorAll('.solution-card');
+      if (index < cards.length - 1) index++;
+      moveCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      moveCarousel();
+    });
+
+    setInterval(() => {
+      const cards = document.querySelectorAll('.solution-card');
+      index = (index + 1) % cards.length;
+      moveCarousel();
+    }, 4000);
+  </script>
+
+</body>
+
+</html>

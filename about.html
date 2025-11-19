@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us </title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container-fluid px-4">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dorent_logo-removebg.png" alt="Dorent Logo" class="navbar-logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <!-- SERVICES DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Services</h6>
+                  <a class="dropdown-item" href="Power Distribution Systems.html">Power Distribution Systems</a>
+                  <a class="dropdown-item" href="Electrical Design & Consultancy.html">Electrical Design &
+                    Consultancy</a>
+                  <a class="dropdown-item" href="Industrial & Commercial Electrification.html">Industrial & Commercial
+                    Electrification</a>
+                  <a class="dropdown-item" href="Earthing & Lightning Protection Systems.html">Earthing & Lightning
+                    Protection Systems</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Infrastructure</h6>
+                  <a class="dropdown-item" href="Structured Cabling & Networking.html">Structured Cabling &
+                    Networking</a>
+                  <a class="dropdown-item" href="Data Center Setup & Maintenance.html">Data Center Setup &
+                    Maintenance</a>
+                  <a class="dropdown-item" href="IT Infrastructure Design & Integration.html">IT Infrastructure Design &
+                    Integration</a>
+                  <a class="dropdown-item" href="IT Helpdesk & Managed Services.html">IT Helpdesk & Managed Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Maintenance</h6>
+                  <a class="dropdown-item" href="#">24/7 Monitoring</a>
+                  <a class="dropdown-item" href="#">Energy Auditing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SOLUTIONS DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="solutionsDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Solutions</h6>
+                  <a class="dropdown-item" href="Energy Management & Auditing.html">Energy Management & Auditing</a>
+                  <a class="dropdown-item" href="Solar Power Solutions & Renewable Integration.html">Solar Power
+                    Solutions & Renewable</a>
+                  <a class="dropdown-item" href="Street Lighting & Outdoor Electrification.html">Street Lighting &
+                    Outdoor Electrification</a>
+                  <a class="dropdown-item" href="Operation & Maintenance (O&M) Services.html">Operation & Maintenance
+                    (O&M) Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Solutions</h6>
+                  <a class="dropdown-item" href="Cloud & Virtualization Solutions.html">Cloud & Virtualization
+                    Solutions</a>
+                  <a class="dropdown-item" href="Cybersecurity & Firewall Solutions.html">Cybersecurity & Firewall
+                    Solutions</a>
+                  <a class="dropdown-item" href="Software Development & ERP Solutions.html">Software Development & ERP
+                    Solutions</a>
+                  <a class="dropdown-item" href="Surveillance & Access Control Systems.html">Surveillance & Access
+                    Control Systems </a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Integrated Solutions</h6>
+                  <a class="dropdown-item" href="Smart Building Solutions.html">Smart Building Solutions</a>
+                  <a class="dropdown-item" href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a>
+                  <a class="dropdown-item" href="Telecom & Unified Communication Systems.html">Telecom & Unified
+                     Systems</a>
+                  <a class="dropdown-item" href="End-to-End Project Management.html">End-to-End Project management</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <style>
+    /* Background Gradient */
+    body {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff, #bbdefb);
+      font-family: "Poppins", sans-serif;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #1565c0, #42a5f5);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero img {
+      width: 130px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section h2 {
+      text-align: center;
+      color: #1565c0;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .about-section p {
+      line-height: 1.8;
+      color: #374151;
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+    }
+
+    .services-section h3 {
+      text-align: center;
+      color: #0d47a1;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(21, 101, 192, 0.2);
+    }
+
+    .service-card h5 {
+      color: #1565c0;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #374151;
+      font-size: 0.95rem;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/dorent logo.jpeg" alt="Dorent Logo">
+      <h1> Dorent Services India Pvt. Ltd.</h1>
+      <p>Delivering Reliable Electrical & IT Infrastructure Solutions Across India Since 2019</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+      <h2>Who We Are</h2>
+      <p>
+        Dorent Services India Private Limited is one of India’s leading enablers of connectivity and communication
+        solutions for businesses. Established in 2019 at Noida, Uttar Pradesh, Dorent has built a strong reputation
+        for delivering reliable, sustainable, and technology-driven Electrical and IT Infrastructure projects
+        nationwide.
+      </p>
+      <p>
+        Our services span across connectivity, collaboration, cloud, security, and enterprise solutions.
+        We are committed to excellence, safety, and timely execution, having successfully delivered numerous
+        projects that meet the highest industry standards for both government and private clients.
+      </p>
+      <p>
+        Our expertise lies in creating sustainable, energy-efficient, and globally connected infrastructures that
+        empower organizations toward smarter operations and better productivity.
+      </p>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <h3>Our Core Services</h3>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Electrical Contracting</h5>
+              <p>Complete electrical contracting solutions including HT/LT panels, transformers, and switchgears.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Internal & External Electrification</h5>
+              <p>Design, installation, and maintenance of electrical systems for industrial and commercial clients.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Energy-efficient Lighting</h5>
+              <p>Advanced lighting solutions for industries, streets, and commercial spaces ensuring minimal power use.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Earthing & Lightning Protection</h5>
+              <p>Reliable earthing systems ensuring personnel and equipment safety under all environmental conditions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>Structured Cabling & Networking</h5>
+              <p>End-to-end LAN/WAN cabling, data center networking, and high-speed communication setup.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h5>CCTV & Access Control Systems</h5>
+              <p>Advanced surveillance and biometric systems ensuring round-the-clock security and monitoring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="why-choose">
+      <h2>Why Choose <span>Dorent?</span></h2>
+      <div class="choose-grid">
+
+        <div class="choose-card">
+          <h3> Electrical Excellence</h3>
+          <p>End-to-end electrical solutions ensuring safety, reliability, and energy efficiency — from power
+            distribution
+            to renewable integration.</p>
+        </div>
+
+        <div class="choose-card">
+          <h3> Smart IT Infrastructure</h3>
+          <p>Robust IT networks, data centers, and cybersecurity systems to keep your business connected, secure, and
+            future-ready.</p>
+        </div>
+
+        <div class="choose-card">
+          <h3> 24×7 Customer Support</h3>
+          <p>Round-the-clock NOC and technical support to ensure your systems stay operational with minimal downtime.
+          </p>
+        </div>
+
+        <div class="choose-card">
+          <h3> Innovation That Empowers</h3>
+          <p>We embrace the latest technologies to provide smart, scalable, and sustainable solutions for your business.
+          </p>
+        </div>
+
+        <div class="choose-card">
+          <h3> Cybersecurity First</h3>
+          <p>Advanced protection mechanisms, firewalls, and real-time monitoring to secure your infrastructure from
+            modern
+            threats.</p>
+        </div>
+
+        <div class="choose-card">
+          <h3> Sustainable Growth</h3>
+          <p>We focus on eco-friendly, energy-efficient practices to create technology solutions that are both smart and
+            sustainable.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects Snapshots</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Integrated Solutions</h4>
+        <ul>
+          <li><a href="Smart Building Solutions.html">Smart Building Solutions (BMS, automation, IoT)</a></li>
+          <li><a href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a></li>
+          <li><a href="Telecom & Unified Communication Systems.html">Telecom & Unified Communication Systems</a></li>
+          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4> Services</h4>
+        <ul>
+          <li><a href="Power Distribution Systems.html">Power Distribution Systems</a></li>
+          <li><a href="Electrical Design & Consultancy.html">Electrical Design & Consultancy</a></li>
+          <li><a href="Industrial & Commercial Electrification.html">Industrial & Commercial Electrification</a></li>
+          <li><a href="Data Center Setup & Maintenance.html">Data Center Setup & Maintenance</a></li>
+          <li><a href="IT Infrastructure Design & Integration.html">IT Infrastructure Design & Integration</a></li>
+          <li><a href="Cloud & Virtualization Solutions.html">Cloud & Virtualization Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-column">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@dorent.in</p>
+        <p><i class="fa-solid fa-phone"></i> +91-95993 37740, 91131 49584</p>
+        <p><i class="fa-solid fa-phone"></i> Dorent Services India Private Limited A 197 SECTOR 63 NOIDA 
+        GAUTAM BUDDHA NAGAR UP 201301</p>
+        
+        <a href="https://maps.app.goo.gl/B1w7H2BCk6m7JGYZA?g_st=aw" class="btn-direction"><i class="fa-solid fa-location-arrow"></i> Get Direction</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 Dorent Services India Private Limited. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+  </footer>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorent</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container-fluid px-4">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dorent_logo-removebg.png" alt="Dorent Logo" class="navbar-logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <!-- SERVICES DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Services</h6>
+                  <a class="dropdown-item" href="Power Distribution Systems.html">Power Distribution Systems</a>
+                  <a class="dropdown-item" href="Electrical Design & Consultancy.html">Electrical Design &
+                    Consultancy</a>
+                  <a class="dropdown-item" href="Industrial & Commercial Electrification.html">Industrial & Commercial
+                    Electrification</a>
+                  <a class="dropdown-item" href="Earthing & Lightning Protection Systems.html">Earthing & Lightning
+                    Protection Systems</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Infrastructure</h6>
+                  <a class="dropdown-item" href="Structured Cabling & Networking.html">Structured Cabling &
+                    Networking</a>
+                  <a class="dropdown-item" href="Data Center Setup & Maintenance.html">Data Center Setup &
+                    Maintenance</a>
+                  <a class="dropdown-item" href="IT Infrastructure Design & Integration.html">IT Infrastructure Design &
+                    Integration</a>
+                  <a class="dropdown-item" href="IT Helpdesk & Managed Services.html">IT Helpdesk & Managed Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Maintenance</h6>
+                  <a class="dropdown-item" href="#">24/7 Monitoring</a>
+                  <a class="dropdown-item" href="#">Energy Auditing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SOLUTIONS DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="solutionsDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Solutions</h6>
+                  <a class="dropdown-item" href="Energy Management & Auditing.html">Energy Management & Auditing</a>
+                  <a class="dropdown-item" href="Solar Power Solutions & Renewable Integration.html">Solar Power
+                    Solutions & Renewable</a>
+                  <a class="dropdown-item" href="Street Lighting & Outdoor Electrification.html">Street Lighting &
+                    Outdoor Electrification</a>
+                  <a class="dropdown-item" href="Operation & Maintenance (O&M) Services.html">Operation & Maintenance
+                    (O&M) Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Solutions</h6>
+                  <a class="dropdown-item" href="Cloud & Virtualization Solutions.html">Cloud & Virtualization
+                    Solutions</a>
+                  <a class="dropdown-item" href="Cybersecurity & Firewall Solutions.html">Cybersecurity & Firewall
+                    Solutions</a>
+                  <a class="dropdown-item" href="Software Development & ERP Solutions.html">Software Development & ERP
+                    Solutions</a>
+                  <a class="dropdown-item" href="Surveillance & Access Control Systems.html">Surveillance & Access
+                    Control Systems </a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Integrated Solutions</h6>
+                  <a class="dropdown-item" href="Smart Building Solutions.html">Smart Building Solutions</a>
+                  <a class="dropdown-item" href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a>
+                  <a class="dropdown-item" href="Telecom & Unified Communication Systems.html">Telecom & Unified
+                    Systems</a>
+                  <a class="dropdown-item" href="End-to-End Project Management.html">End-to-End Project management</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <style>
+    /* Background Gradient */
+    body {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff, #bbdefb);
+      font-family: "Poppins", sans-serif;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #1565c0, #42a5f5);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero img {
+      width: 130px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #e3f2fd;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/dorent logo.jpeg" alt="Dorent Logo">
+    <h1> Dorent Services India Pvt. Ltd.</h1>
+    <p>Delivering Reliable Electrical & IT Infrastructure Solutions Across India Since 2019</p>
+  </section>
+
+  <!-- contact us form -->
+
+  <section class="contact-section">
+
+    <div class="contact-overlay"></div>
+
+    <div class="contact-content">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <input type="hidden" name="access_key" value="d8b60da3-fb73-419f-b948-6b45595e87e8">
+            <input type="text" name="name" placeholder=" your Name"  class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Email Address"  class="contact-inputs" required>
+            <input type="telephone" name="number" placeholder="Contact Number" class="contact-inputs" required>
+          </div>
+          <textarea name="Message" placeholder="your  Message"  class="contact-inputs" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects Snapshots</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Integrated Solutions</h4>
+        <ul>
+          <li><a href="Smart Building Solutions.html">Smart Building Solutions (BMS, automation, IoT)</a></li>
+          <li><a href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a></li>
+          <li><a href="Telecom & Unified Communication Systems.html">Telecom & Unified Communication Systems</a></li>
+          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4> Services</h4>
+        <ul>
+          <li><a href="Power Distribution Systems.html">Power Distribution Systems</a></li>
+          <li><a href="Electrical Design & Consultancy.html">Electrical Design & Consultancy</a></li>
+          <li><a href="Industrial & Commercial Electrification.html">Industrial & Commercial Electrification</a></li>
+          <li><a href="Data Center Setup & Maintenance.html">Data Center Setup & Maintenance</a></li>
+          <li><a href="IT Infrastructure Design & Integration.html">IT Infrastructure Design & Integration</a></li>
+          <li><a href="Cloud & Virtualization Solutions.html">Cloud & Virtualization Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-column">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@dorent.in</p>
+        <p><i class="fa-solid fa-phone"></i> +91-95993 37740, 91131 49584</p>
+        <p><i class="fa-solid fa-phone"></i> Dorent Services India Private Limited A 197 SECTOR 63 NOIDA 
+        GAUTAM BUDDHA NAGAR UP 201301</p>
+        
+        <a href="https://maps.app.goo.gl/B1w7H2BCk6m7JGYZA?g_st=aw" class="btn-direction"><i class="fa-solid fa-location-arrow"></i> Get Direction</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 Dorent Services India Private Limited. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>

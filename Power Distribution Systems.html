@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorent</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <div class="container-fluid px-4">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/dorent_logo-removebg.png" alt="Dorent Logo" class="navbar-logo">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <!-- SERVICES DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="servicesDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Services</h6>
+                  <a class="dropdown-item" href="Power Distribution Systems.html">Power Distribution Systems</a>
+                  <a class="dropdown-item" href="Electrical Design & Consultancy.html">Electrical Design &
+                    Consultancy</a>
+                  <a class="dropdown-item" href="Industrial & Commercial Electrification.html">Industrial & Commercial
+                    Electrification</a>
+                  <a class="dropdown-item" href="Earthing & Lightning Protection Systems.html">Earthing & Lightning
+                    Protection Systems</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Infrastructure</h6>
+                  <a class="dropdown-item" href="Structured Cabling & Networking.html">Structured Cabling &
+                    Networking</a>
+                  <a class="dropdown-item" href="Data Center Setup & Maintenance.html">Data Center Setup &
+                    Maintenance</a>
+                  <a class="dropdown-item" href="IT Infrastructure Design & Integration.html">IT Infrastructure Design &
+                    Integration</a>
+                  <a class="dropdown-item" href="IT Helpdesk & Managed Services.html">IT Helpdesk & Managed Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Maintenance</h6>
+                  <a class="dropdown-item" href="#">24/7 Monitoring</a>
+                  <a class="dropdown-item" href="#">Energy Auditing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- SOLUTIONS DROPDOWN -->
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Solutions
+            </a>
+            <div class="dropdown-menu mega-menu p-4" aria-labelledby="solutionsDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>Electrical Solutions</h6>
+                  <a class="dropdown-item" href="Energy Management & Auditing.html">Energy Management & Auditing</a>
+                  <a class="dropdown-item" href="Solar Power Solutions & Renewable Integration.html">Solar Power
+                    Solutions & Renewable</a>
+                  <a class="dropdown-item" href="Street Lighting & Outdoor Electrification.html">Street Lighting &
+                    Outdoor Electrification</a>
+                  <a class="dropdown-item" href="Operation & Maintenance (O&M) Services.html">Operation & Maintenance
+                    (O&M) Services</a>
+                </div>
+                <div class="col-md-4">
+                  <h6>IT Solutions</h6>
+                  <a class="dropdown-item" href="Cloud & Virtualization Solutions.html">Cloud & Virtualization
+                    Solutions</a>
+                  <a class="dropdown-item" href="Cybersecurity & Firewall Solutions.html">Cybersecurity & Firewall
+                    Solutions</a>
+                  <a class="dropdown-item" href="Software Development & ERP Solutions.html">Software Development & ERP
+                    Solutions</a>
+                  <a class="dropdown-item" href="Surveillance & Access Control Systems.html">Surveillance & Access
+                    Control Systems </a>
+                </div>
+                <div class="col-md-4">
+                  <h6>Integrated Solutions</h6>
+                  <a class="dropdown-item" href="Smart Building Solutions.html">Smart Building Solutions</a>
+                  <a class="dropdown-item" href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a>
+                  <a class="dropdown-item" href="Telecom & Unified Communication Systems.html">Telecom & Unified
+                    Systems</a>
+                  <a class="dropdown-item" href="End-to-End Project Management.html">End-to-End Project management</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+
+
+  <style>
+    .hero-section {
+      position: relative;
+      height: 80vh;
+      background: url("Hero images/Power Distribution Systems.hero.jpg") center center / cover no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+  </style>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Power Distribution Systems</h1>
+      <p>HT/LT Panels, Transformers, and Switchgears — reliable power delivery for modern infrastructure.</p>
+    </div>
+  </section>
+
+  <!-- Product Details Section -->
+  <section class="product-details">
+    <div class="container">
+      <h2>About Our Power Distribution Systems</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/power.1 ht panel.jpeg"
+              class="card-img-top" alt="HT Panels">
+            <div class="card-body">
+              <h5 class="card-title">HT Panels</h5>
+              <p>High-Tension panels are designed to handle and control large-scale electrical loads efficiently. They
+                ensure seamless energy distribution in industrial environments, offering protection from overload and
+                short circuits. Built using advanced materials, our HT panels guarantee both safety and long-term
+                performance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/power.2.lt.webp"
+              class="card-img-top" alt="LT Panels">
+            <div class="card-body">
+              <h5 class="card-title">LT Panels</h5>
+              <p>Our Low-Tension panels are ideal for managing electrical power at lower voltage levels. They are
+                customized to suit commercial and industrial needs, integrating safety devices, metering instruments,
+                and automation features for efficient power distribution and control.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/power.3tansformer.jpg"
+              class="card-img-top" alt="Transformers">
+            <div class="card-body">
+              <h5 class="card-title">Transformers</h5>
+              <p>We supply and install transformers that ensure stable voltage levels across facilities. Designed for
+                high efficiency and minimal energy loss, our transformers play a vital role in industrial power
+                infrastructure, ensuring a consistent and safe electricity supply.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-description mt-5">
+        <p>
+          At Dorent, our Power Distribution Systems are tailored to meet the evolving energy needs of industrial,
+          commercial, and utility sectors. We focus on delivering high-quality electrical panels, transformers, and
+          switchgears that provide consistent power flow, minimize downtime, and enhance operational safety.
+        </p>
+
+        <p>
+          Each system is designed with precision engineering, using top-grade materials and modern automation
+          technology. From manufacturing plants and data centers to smart city infrastructures, our power distribution
+          solutions enable clients to achieve energy efficiency and reliability at scale.
+        </p>
+
+        <p>
+          Whether it's HT panels for industrial substations or LT control panels for commercial applications, we ensure
+          compliance with international safety standards. Our expert engineering team provides complete end-to-end
+          services including design, manufacturing, installation, and maintenance to ensure your systems run seamlessly
+          around the clock.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Features Section -->
+  <section class="why-choose">
+    <h2>Why Choose <span>Dorent?</span></h2>
+    <div class="choose-grid">
+
+      <div class="choose-card">
+        <h3> Electrical Excellence</h3>
+        <p>End-to-end electrical solutions ensuring safety, reliability, and energy efficiency — from power distribution
+          to renewable integration.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Smart IT Infrastructure</h3>
+        <p>Robust IT networks, data centers, and cybersecurity systems to keep your business connected, secure, and
+          future-ready.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> 24×7 Customer Support</h3>
+        <p>Round-the-clock NOC and technical support to ensure your systems stay operational with minimal downtime.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Innovation That Empowers</h3>
+        <p>We embrace the latest technologies to provide smart, scalable, and sustainable solutions for your business.
+        </p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Cybersecurity First</h3>
+        <p>Advanced protection mechanisms, firewalls, and real-time monitoring to secure your infrastructure from modern
+          threats.</p>
+      </div>
+
+      <div class="choose-card">
+        <h3> Sustainable Growth</h3>
+        <p>We focus on eco-friendly, energy-efficient practices to create technology solutions that are both smart and
+          sustainable.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects Snapshots</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Integrated Solutions</h4>
+        <ul>
+          <li><a href="Smart Building Solutions.html">Smart Building Solutions (BMS, automation, IoT)</a></li>
+          <li><a href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a></li>
+          <li><a href="Telecom & Unified Communication Systems.html">Telecom & Unified Communication Systems</a></li>
+          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4> Services</h4>
+        <ul>
+          <li><a href="Power Distribution Systems.html">Power Distribution Systems</a></li>
+          <li><a href="Electrical Design & Consultancy.html">Electrical Design & Consultancy</a></li>
+          <li><a href="Industrial & Commercial Electrification.html">Industrial & Commercial Electrification</a></li>
+          <li><a href="Data Center Setup & Maintenance.html">Data Center Setup & Maintenance</a></li>
+          <li><a href="IT Infrastructure Design & Integration.html">IT Infrastructure Design & Integration</a></li>
+          <li><a href="Cloud & Virtualization Solutions.html">Cloud & Virtualization Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-column">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@dorent.in</p>
+        <p><i class="fa-solid fa-phone"></i> +91-95993 37740, 91131 49584</p>
+        <p><i class="fa-solid fa-phone"></i> Dorent Services India Private Limited A 197 SECTOR 63 NOIDA 
+        GAUTAM BUDDHA NAGAR UP 201301</p>
+        
+        <a href="https://maps.app.goo.gl/B1w7H2BCk6m7JGYZA?g_st=aw" class="btn-direction"><i class="fa-solid fa-location-arrow"></i> Get Direction</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2025 Dorent Services India Private Limited. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+  </footer>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let index = 0;
+
+    function moveCarousel() {
+      const cards = document.querySelectorAll('.solution-card');
+      const cardWidth = cards[0].offsetWidth + 20; // 20px gap
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      const cards = document.querySelectorAll('.solution-card');
+      if (index < cards.length - 1) index++;
+      moveCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      moveCarousel();
+    });
+
+    setInterval(() => {
+      const cards = document.querySelectorAll('.solution-card');
+      index = (index + 1) % cards.length;
+      moveCarousel();
+    }, 4000);
+  </script>
+</body>
+
+</html>
