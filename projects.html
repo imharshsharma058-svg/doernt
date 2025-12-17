@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/dorent.fevicon.jpg" type="image/x-icon">
+
 </head>
 <body>
     <!-- navbar -->
@@ -132,256 +134,477 @@
   <br>
 
 <style>
-        /*  Gradient Background */
-        body {
-            background: linear-gradient(135deg, #0b46d1, #1a3b72, #0c3063);
-            background-size: 400% 400%;
-            animation: gradientFlow 12s ease infinite;
-            min-height: 100vh;
-            color: rgb(15, 15, 15);
-        }
+  body {
+    background: linear-gradient(135deg, #0b46d1, #1a3b72, #0c3063);
+    background-size: 400% 400%;
+    animation: gradientFlow 12s ease infinite;
+    min-height: 100vh;
+  }
 
-        @keyframes gradientFlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        /* Make all project images same size */
-        .project-image {
-            width: 100%;
-            height: 220px;       /* Set your preferred fixed height */
-            object-fit: cover;   /* Crop images nicely */
-            border-radius: 10px;
-        }
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-        .project-card {
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .project-title {
-            font-weight: 600;
-            font-size: 20px;
-        }
-/* 70% Width Card */
-.project-card-70 {
-    width: 70%;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-/* Make image clean and nicely cropped */
-.custom-img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px 12px 0 0;
-    object-fit: cover;
-}
-/* Fully responsive width */
-.project-card-responsive {
-    width: 70%;       /* Default for desktop */
-    border-radius: 12px;
-    overflow: hidden;
+  /* ================= PROJECT CARD ================= */
+  .project-card {
     background: #fff;
-}
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-/* Tablet */
-@media (max-width: 991px) {
-    .project-card-responsive {
-        width: 85%;
-    }
-}
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
 
-/* Mobile */
-@media (max-width: 576px) {
-    .project-card-responsive {
-        width: 100%;
-    }
-}
-
-/* Clean image */
-.custom-img {
+  /* ================= IMAGE (REAL RESPONSIVE FIX) ================= */
+  .project-image {
     width: 100%;
-    height: auto;
+    height: auto;          /* ❗ KEY FIX */
+    max-height: 240px;     /* limit only for desktop */
     object-fit: cover;
+    display: block;
+  }
+
+  /* ================= TEXT ================= */
+  .project-title {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  h2.section-title {
+    color: #111;
+    font-weight: 700;
+  }
+h4{
+  color: rgb(169, 169, 169);
+}
+
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+    .project-image {
+      max-height: 200px;
+    }
+
+    .project-title {
+      font-size: 15px;
+    }
+
+    small {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .project-image {
+      max-height: none;   /* FULL AUTO on small phones */
+    }
+
+    .project-card {
+      margin-bottom: 15px;
+    }
+  }
+  .ongoing-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .ongoing-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .ongoing-img-box {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+    }
+
+    .ongoing-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .project-image,
+      .ongoing-img-box {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .project-image,
+      .ongoing-img-box {
+        height: 180px;
+      }
+    }
+.project-heading {
+  color: navy;
 }
 
 
+    footer {
+      margin-top: 60px;
+      position: relative;
+      z-index: 10;
+    }
+</style>
 
-    </style>
 
-    <div class="container py-5">
+   <!-- Spacer -->
+<div style="height:100px"></div>
 
-    <h2 class="text-center mb-4 fw-bold">Our Completed Projects</h2>
-    <p class="text-center mb-5">
-        Projects executed at <strong>SPMCIL World Trade Center, Delhi</strong>  
-        and <strong>Steel Authority of India Limited (SAIL), Kolkata</strong>
-    </p>
+<!-- ================= PROJECTS SECTION ================= -->
+<div class="container py-5">
+
+  <!-- COMPLETED PROJECTS -->
+  <!-- Vodafone Idea Limited (VI), Hyderabad -->
+  <h2 class="text-center mb-2 section-title">Completed Projects</h2>
+<h4 class="text-center mb-4 section-title project-heading">
+  Vodafone Idea Limited (VI), Hyderabad
+</h4>
+
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/1.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Vodafone Idea Limited (VI), Hyderabad </p>
+          <small class="text-muted">Vodafone Idea Ltd., Madhapur Tech Village, Hyderabad, Telangana – 
+500081</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/2.jpeg" class="project-image">
+        <div class="p-3">
+           <p class="project-title mb-1"> Vodafone Idea Limited (VI), Hyderabad </p>
+          <small class="text-muted">Vodafone Idea Ltd., Madhapur Tech Village, Hyderabad, Telangana – 
+500081</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/3.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Vodafone Idea Limited (VI), Hyderabad </p>
+          <small class="text-muted">Vodafone Idea Ltd., Madhapur Tech Village, Hyderabad, Telangana – 
+500081</small>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </div>
+  <br>
+  
+  
+  <!-- Security Printing & Minting Corporation of India Limited (SPMCIL), World 
+Trade Center, New Delhi  -->
+  <h4 class="text-center mb-4 section-title project-heading "> Security Printing & Minting Corporation of India Limited (SPMCIL), World 
+Trade Center, New Delhi  </h4>
+
+  <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/4.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Security Printing & Minting Corporation of India Limited (SPMCIL), World 
+Trade Center, New Delhi </p>
+          <small class="text-muted">SPMCIL Office, World Trade Center, Babar Road, Connaught Place, 
+New Delhi – 110001</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/8.jpeg" class="project-image">
+        <div class="p-3">
+           <p class="project-title mb-1">Security Printing & Minting Corporation of India Limited (SPMCIL), World 
+Trade Center, New Delhi </p>
+          <small class="text-muted">SPMCIL Office, World Trade Center, Babar Road, Connaught Place, 
+New Delhi – 110001</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/5.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Security Printing & Minting Corporation of India Limited (SPMCIL), World 
+Trade Center, New Delhi </p>
+          <small class="text-muted">SPMCIL Office, World Trade Center, Babar Road, Connaught Place, 
+New Delhi – 110001</small>
+        </div>
+      </div>
+    </div>
+  
+
+  </div>
+  <br>
+  <!-- Agricultural Insurance Company of India Limited (AIC), Bhubaneswar & 
+Guwahati -->
+  <h4 class="text-center mb-4 section-title project-heading"> Agricultural Insurance Company of India Limited (AIC), Bhubaneswar & 
+Guwahati  </h4>
+  <br>
+
+  <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/12.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Agricultural Insurance Company of India Limited (AIC), Bhubaneswar & 
+Guwahati  </p>
+          <small class="text-muted">Bhubaneswar Office: Nayan Vihar, Nayapalli, Bhubaneswar, Odisha – 
+751012 </small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/14.jpeg" class="project-image">
+        <div class="p-3">
+           <p class="project-title mb-1">Agricultural Insurance Company of India Limited (AIC), Bhubaneswar & 
+Guwahati  </p>
+          <small class="text-muted">Bhubaneswar Office: Nayan Vihar, Nayapalli, Bhubaneswar, Odisha – 
+751012 </small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/16.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Agricultural Insurance Company of India Limited (AIC), Bhubaneswar & 
+Guwahati  </p>
+          <small class="text-muted">Guwahati Office: Acharya Vihar, Rukminigaon, Guwahati, Assam – 
+781022 </small>
+        </div>
+      </div>
+    </div>
+
+ 
+
+  </div>
+  <br>
+  <!-- Steel Authority of India Limited (SAIL), Kolkata  -->
+  <h4 class="text-center mb-4 section-title project-heading"> Steel Authority of India Limited (SAIL), Kolkata   </h4>
+  <br>
+
+  <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/7.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1">Steel Authority of India Limited (SAIL), Kolkata   </p>
+          <small class="text-muted"> Ispat Bhawan, 36 Chowringhee Road, Kolkata, West Bengal – 700071</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/10.jpeg" class="project-image">
+        <div class="p-3">
+           <p class="project-title mb-1">Steel Authority of India Limited (SAIL), Kolkata   </p>
+          <small class="text-muted"> Ispat Bhawan, 36 Chowringhee Road, Kolkata, West Bengal – 700071</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/9.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Steel Authority of India Limited (SAIL), Kolkata  </p>
+          <small class="text-muted"> Ispat Bhawan, 36 Chowringhee Road, Kolkata, West Bengal – 700071</small>
+        </div>
+      </div>
+    </div>
+
+ 
+  </div>
+  <br>
+  <!-- Kaushal Bhawan, New Delhi  -->
+  <h4 class="text-center mb-4 section-title project-heading"> Kaushal Bhawan, New Delhi   </h4>
+  <br>
+
+  <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/kaushal.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1"> Kaushal Bhawan, New Delhi   </p>
+          <small class="text-muted">Kaushal Bhawan, BKS Marg, Pusa Road Area, New Delhi – 110001</small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/kaushal.1.jpeg" class="project-image">
+        <div class="p-3">
+           <p class="project-title mb-1">Kaushal Bhawan, New Delhi   </p>
+          <small class="text-muted">Kaushal Bhawan, BKS Marg, Pusa Road Area, New Delhi – 110001 </small>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="project-card">
+        <img src="projects images/kausal.2.jpeg" class="project-image">
+        <div class="p-3">
+          <p class="project-title mb-1">Kaushal Bhawan, New Delhi   </p>
+          <small class="text-muted">Kaushal Bhawan, BKS Marg, Pusa Road Area, New Delhi – 110001 </small>
+        </div>
+      </div>
+    </div>
+
+   
+
+  </div>
+
+  <!-- ONGOING PROJECTS -->
+<div class="container py-5">
+    <h2 class="text-center mb-2 section-title">Ongoing Projects</h2>
+    <p class="text-center mb-4 text-dark fw-semibold">Project Execution in Progress for</p>
+
+    <div class="text-center mb-4 text-dark">
+      <h4> <span class="badge bg-light text-dark me-2 px-3 py-2">➤ ED Office, Kolkata</span>
+      <span class="badge bg-light text-dark me-2 px-3 py-2">➤ Oil India Limited</span>
+      <span class="badge bg-light text-dark px-3 py-2">➤ Election Commission of India</span></h4>
+     
+    </div>
 
     <div class="row g-4">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/1.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
+      <!-- 12 SAME SIZE CARDS -->
+      <!-- Repeat -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.1.jpeg">
+          </div>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/2.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.2.jpeg">
+          </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/3.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/4.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/5.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/17.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/18.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/7.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/9.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/10.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/11.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/12.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/13.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/14.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/20.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="project-card shadow-sm">
-                <img src="projects images/16.jpeg" class="project-image" alt="Project Image">
-                <div class="p-3">
-                    <p class="project-title mb-1">Project Snapshot </p>
-                    <small class="text-muted">SPMCIL / SAIL</small>
-                </div>
-            </div>
-        </div>
+      </div>
 
-       
-    </div>
-<div class="container my-5 d-flex justify-content-center">
-    <div class="project-card-70 card shadow-lg border-0">
-        <img src="projects images/8.jpeg" class="card-img-top custom-img" alt="SPMCIL Project Team">
-        <div class="card-body text-center">
-            <h4 class="fw-bold mb-2">SECURITY PRINTING AND MINTING CORPORATION OF INDIA LIMITED</h4>
-            <p class="mb-0 text-muted">Team photo during on-site project execution</p>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.3.jpeg">
+          </div>
         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.4.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.5.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.6.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.7.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.8.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.9.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.10.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.11.jpeg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="ongoing-card">
+          <div class="ongoing-img-box">
+            <img src="projects images/ongoing.12.jpeg">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+  
 
 </div>
 
@@ -431,7 +654,7 @@
   </section>
 
 <!-- footer section -->
-  <footer class="footer">
+ <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
         <h4>Company</h4>
@@ -449,7 +672,8 @@
           <li><a href="Smart Building Solutions.html">Smart Building Solutions (BMS, automation, IoT)</a></li>
           <li><a href="ICT Infrastructure Projects.html">ICT Infrastructure Projects</a></li>
           <li><a href="Telecom & Unified Communication Systems.html">Telecom & Unified Communication Systems</a></li>
-          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a></li>
+          <li><a href="End-to-End Project Management.html">End-to-End Project Management (Design → Execution → AMC)</a>
+          </li>
         </ul>
       </div>
 
@@ -469,10 +693,10 @@
         <h4>Contact Us</h4>
         <p><i class="fa-solid fa-envelope"></i> info@dorent.in</p>
         <p><i class="fa-solid fa-phone"></i> +91-95993 37740, 91131 49584</p>
-        <p><i class="fa-solid fa-phone"></i> Dorent Services India Private Limited A 197 SECTOR 63 NOIDA 
-        GAUTAM BUDDHA NAGAR UP 201301</p>
-        
-        <a href="https://maps.app.goo.gl/B1w7H2BCk6m7JGYZA?g_st=aw" class="btn-direction"><i class="fa-solid fa-location-arrow"></i> Get Direction</a>
+        <p><i class="fa-solid fa-phone"></i> T 01 D 215, Sector 63 Rd, D Block, Sector 63, Devsha Business Park Noida, Uttar Pradesh 201309</p>
+
+        <a href="https://maps.app.goo.gl/rYNLq3SaHhXscUFu6?g_st=aw" class="btn-direction"><i
+            class="fa-solid fa-location-arrow"></i> Get Direction</a>
       </div>
     </div>
 
